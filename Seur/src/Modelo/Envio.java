@@ -35,6 +35,7 @@ public class Envio {
 		}
 		else
 			coste=coste+7;
+		
 		if (this.tipoEnvio.equals("Paq 10 - Antes de las 10 h ") )
 		{
 			coste=coste + 5;
@@ -102,8 +103,16 @@ public class Envio {
 	public void setPeso(int peso) {
 		this.peso = peso;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Envio [ciudadOrigen=" + ciudadOrigen + ", origenNacional=" + origenNacional + ", ciudadDestino="
+				+ ciudadDestino + ", destinoNacional=" + destinoNacional + ", tipoEnvio=" + tipoEnvio + ", peso=" + peso
+				+ "]";
+	}
 	
-		
+	
 	
 	
 
