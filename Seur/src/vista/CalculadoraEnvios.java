@@ -131,7 +131,7 @@ public class CalculadoraEnvios {
 				{
 					envio = new Envio(cOrigen.getText(),oNacional.isSelected(),cDestino.getText(),dNacional.isSelected(), tEnvio.getSelectedItem().toString(),(int) pesoSpinner.getValue());
 					System.out.println(envio);
-					JOptionPane.showMessageDialog(null, "Origen y/o destino vacíos", "Calcula Envío", JOptionPane.WARNING_MESSAGE);
+					JOptionPane.showMessageDialog(null, "Coste del envío: " + envio.calcularImporte() +"€ ", "Calcula Envío", JOptionPane.INFORMATION_MESSAGE);
 				}
 					
 				
